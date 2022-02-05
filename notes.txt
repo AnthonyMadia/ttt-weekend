@@ -1,29 +1,4 @@
-// User Story
 
-- AAU, I want to see a tic-tac-toe board displayed
-- AAU, I want to see Player X and Player O and Tie scores below board
-- AAU, I want to click a box and see X or O  
-- AAU, I should not be able to change a box once clicked 
-- AAU, I should have the computer tell me if I won or lost (with confetti and sound effects)
-- AAU, if I win, the board should remain there for a couple of seconds
-- AAU, I should have a button to restart the game
-- AAU, I should see a tally of the wins and loses after each win or loss.
-
-
-// 1) Define the required variables used to track the state of the game:
-  // None of these variables will need to hold a value when they are defined
-
-	// 1.1) Use an array to represent the squares on the board.    
-
-	// 1.2) Use a turn variable to track whose turn it is.
-
-	// 1.3) Use a winner variable to represent three different game states:
-	  // a player that won
-	  // a tie has occured
-	  // or a game that is still in play.
-
-
-// 2) Store cached element references on the page that will be accessed in code more than once in variables to make code more concise, readable, and performant:
 	
 	// 2.1) Store the 9 elements that represent the squares on the page.
 	  // You may want to give each square a class name in your HTML to make this easier!
@@ -120,6 +95,6 @@
 
 	// 6.2) Store the new replay button element
 
-	// 6.3) Do steps 4.1 (initialize the state variables) and 4.2 (rennder).
+	// 6.3) Do steps 4.1 (initialize the state variables) and 4.2 (render)
 
 

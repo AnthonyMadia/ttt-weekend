@@ -14,24 +14,32 @@
 	<title>Tic Tac Toe</title>
 </head>
 <body>
+	<main class="display">
 	<section class="title">
 		<h1 class="animate__animated animate__bounce">Tic-Tac-Toe</h1>
 	</section>
 	<section id="message">
 		Let's Play! 
 	</section>
-	<section class="board">
-		<div id="sq0"></div>
-		<div id="sq1"></div>
-		<div id="sq2"></div>
-		<div id="sq3"></div>
-		<div id="sq4"></div>
-		<div id="sq5"></div>
-		<div id="sq6"></div>
-		<div id="sq7"></div>
-		<div id="sq8"></div>
-	</section>		
-	<button class="btn btn-danger" id="reset-btn">Reset</button>
-	<h3 id="wins-counter">sadf</h3>
+	<section id="board">
+		<div class="cell top left" id="sq0"></div>
+		<div class="cell top" id="sq1"></div>
+		<div class="cell top right" id="sq2"></div>
+		<div class="cell mid left" id="sq3"></div>
+		<div class="cell mid" id="sq4"></div>
+		<div class="cell mid right" id="sq5"></div>
+		<div class="cell bot right" id="sq6"></div>
+		<div class="cell bot" id="sq7"></div>
+		<div class="cell bot right" id="sq8"></div>
+	</section>
+	<div>
+		<button class="btn btn-danger button" id="restart-btn">Restart</button>
+	</div>		
+	<footer>
+		<p>
+			Created by Anthony
+		</p>
+	</footer>
+</main>
 </body>
 </html>
