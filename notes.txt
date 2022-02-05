@@ -1,9 +1,4 @@
 
-	
-	// 2.1) Store the 9 elements that represent the squares on the page.
-	  // You may want to give each square a class name in your HTML to make this easier!
-
-	// 2.2) Store the element that displays the game status on the page.
 
 
 // 3) Upon loading, the app should:
