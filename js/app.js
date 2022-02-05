@@ -1,7 +1,6 @@
 /*-------------------------------- Constants --------------------------------*/
 
 
-
 /*---------------------------- Variables (state) ----------------------------*/
 let squares, turn, winner 
 let turnCount = 1
@@ -13,26 +12,29 @@ const gameUpdate = document.querySelector('#message')
 const resetBtn = document.querySelector('#reset-btn')
 const board = document.querySelector('.board')
 
-console.log(resetBtn)
-console.log(gameUpdate)
+console.log(gameUpdate, resetBtn, board)
 
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 board.addEventListener('click', onClick)
+resetBtn.addEventListener('click', resetGame)
 
 
 /*-------------------------------- Functions --------------------------------*/
 init();
 
 function init() {
-  return gameUpdate.textContent = "It is X's turn!"
+  board = ['null', 'null', 'null', 'null', 'null', 'null', 'null', 'null', 'null'];
+  gameUpdate.textContent = "It is X's turn!"
+  resetBtn.setAttribute('hidden', true)
+  
 }
 
 function onClick(evt) {
   console.log(evt)
 }
 
-function reset(evt) {
+function resetGame(evt) {
 
 }
