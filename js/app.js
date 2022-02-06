@@ -27,6 +27,7 @@ let board, turn, winner
 const restartBtn = document.getElementById('reset')
 const squares = document.querySelectorAll('section > div')
 const message = document.getElementById('message') 
+const danger = document.getElementById('dont-click')
 
 
 
@@ -34,6 +35,7 @@ const message = document.getElementById('message')
 /*----------------------------- Event Listeners -----------------------------*/
 squares.forEach((square) => {square.addEventListener("click", onClick)})
 restartBtn.addEventListener('click', init)
+
 
 
 /*-------------------------------- Functions --------------------------------*/
@@ -55,10 +57,10 @@ function render() {
     let letter
     let color 
     if (cell === 1) {
-      letter = '❌'
+      letter = '👽'
       color = 'white'
     } else if (cell === -1) {
-      letter = '⭕'
+      letter = '👾'
       color = "white"
     } else if (cell === null) {
       letter =  ""
