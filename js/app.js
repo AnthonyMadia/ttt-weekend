@@ -12,14 +12,6 @@ const winArr = [
 ]
 
 /*---------------------------- Variables (state) ----------------------------*/
-// 1) Define the required variables used to track the state of the game:
-  // None of these variables will need to hold a value when they are defined
-  // 1.1) Use an array to represent the squares on the board.    
-  // 1.2) Use a turn variable to track whose turn it is.
-  // 1.3) Use a winner variable to represent three different game states:
-	  // a player that won
-	  // a tie has occured
-	  // or a game that is still in play.
 let board, turn, winner
 
 
@@ -27,7 +19,7 @@ let board, turn, winner
 const restartBtn = document.getElementById('reset')
 const squares = document.querySelectorAll('section > div')
 const message = document.getElementById('message') 
-const danger = document.getElementById('dont-click')
+const fun = document.getElementById('fun')
 
 
 
@@ -35,6 +27,7 @@ const danger = document.getElementById('dont-click')
 /*----------------------------- Event Listeners -----------------------------*/
 squares.forEach((square) => {square.addEventListener("click", onClick)})
 restartBtn.addEventListener('click', init)
+fun.addEventListener('click', funfun)
 
 
 
@@ -113,4 +106,10 @@ function getWinner() {
   } else {
     return "T"
   }
+}
+
+function funfun() {
+  confetti.start(10)
+  //change color 
+  
 }
