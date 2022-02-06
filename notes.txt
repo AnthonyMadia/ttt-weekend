@@ -135,6 +135,6 @@ Write a function for counting whether x or o won.
 
 	// 6.2) Store the new replay button element
 
-	// 6.3) Do steps 4.1 (initialize the state variables) and 4.2 (ren
+	// 6.3) Do steps 4.1 (initialize the state variables) and 4.2 (render.)
 
 
