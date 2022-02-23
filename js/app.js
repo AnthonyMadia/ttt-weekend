@@ -20,6 +20,7 @@ const restartBtn = document.getElementById('reset')
 const squares = document.querySelectorAll('section > div')
 const message = document.getElementById('message') 
 const fun = document.getElementById('fun')
+const header = document.querySelectorAll('h1')
 
 
 
@@ -52,6 +53,8 @@ function render() {
     if (cell === 1) {
       letter = '👽'
       color = 'white'
+      
+      
     } else if (cell === -1) {
       letter = '👾'
       color = "white"
@@ -59,6 +62,7 @@ function render() {
       letter =  ""
       color = 'black'
     }
+
     squares[idx].innerText = letter
     squares[idx].style.background = color
   });
