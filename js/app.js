@@ -63,11 +63,11 @@ function render() {
     squares[idx].style.background = color
   });
   if (!winner) {
-    message.innerText = `It is ${turn === 1 ? "My" : "Your"} turn!!`
+    message.innerText = `It is ${turn === 1 ? "Santi's" : "Anthony's"} turn!!`
   } else if (winner === "T") {
     message.innerText = `Tie Game!`
   } else {
-    message.innerText = `Congratulations ${winner === 1 ? "Anthony" : "Other person"}!`
+    message.innerText = `Congratulations ${winner === 1 ? "Santi" : "Anthony"}!`
     confetti.start(2000)
   }
 }
@@ -109,6 +109,6 @@ function getWinner() {
 }
 
 function funfun() {
-  confetti.start(1000)
+  confetti.start(100)
 
 }
