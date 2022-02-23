@@ -57,7 +57,7 @@ function render() {
       color = "white"
     } else if (cell === null) {
       letter =  ""
-      color = 'white'
+      color = 'black'
     }
     squares[idx].innerText = letter
     squares[idx].style.background = color
@@ -68,6 +68,7 @@ function render() {
     message.innerText = `Tie Game!`
   } else {
     message.innerText = `Congratulations ${winner === 1 ? "Santi" : "Anthony"}!`
+    message.classList.add("animate__heartBeat")
     confetti.start(2000)
   }
 }
